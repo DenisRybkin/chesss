@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-black-cell : #33322a;
+  --color-white-cell : #bdbba2;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  width: calc(64px*8);
+  height: calc(64px*8);
+  display: flex;
+  flex-wrap: wrap;
+}
+.board-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.lost {
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: lightgray;
+}
+.board-info-block {
+  border-radius: 10px;
+  border-width: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  z-index: 2;
+}
+.black {
+  background-color: var(--color-black-cell);
+}
+.white {
+  background-color: var(--color-white-cell);
+}
+.selected {
+  background-color: brown;
+}
+.selected-cell {
+  position: absolute;
+  z-index: 1;
+  background-color: #9c975c;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  opacity: .8;
+}
+.avaible {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: green;
+}
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgba(51,50,42,1) 0%, rgba(189,187,162,1) 100%);
+}
