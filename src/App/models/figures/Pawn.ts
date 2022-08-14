@@ -3,7 +3,7 @@ import { Colors } from "../Colors";
 import { Cell } from "../Cell";
 import blackLogo from "../../../assets/black-pawn.png";
 import whiteLogo from "../../../assets/white-pawn.png";
-import { FigureNames } from "../../../contants/boardConfig";
+import { FigureNames } from "../../../constants/boardConfig";
 
 export class Pawn extends BaseFigure {
   isFirstStep: boolean = true;

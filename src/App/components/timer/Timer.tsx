@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ITimer } from "./Timer.interface";
 import { Colors } from "../../models/Colors";
-import { TimerKeys } from "../../../contants/boardConfig";
+import { TimerKeys } from "../../../constants/boardConfig";
 
 export const Timer: React.FC<ITimer> = (props) => {
-  const [blackTime, setBlackTime] = useState(TimerKeys.durationMove);
-  const [whiteTime, setWhiteTime] = useState(TimerKeys.durationMove);
+  const [blackTime, setBlackTime] = useState(TimerKeys.durationMoves);
+  const [whiteTime, setWhiteTime] = useState(TimerKeys.durationMoves);
 
   const timer = useRef<null | ReturnType<typeof setInterval>>(null);
 
@@ -21,8 +21,8 @@ export const Timer: React.FC<ITimer> = (props) => {
   const decrementBlackTimer = () => setBlackTime((prev) => prev - 1);
   const decrementWhiteTimer = () => setWhiteTime((prev) => prev - 1);
 
-  const resetBlackTime = () => setBlackTime(TimerKeys.durationMove);
-  const resetWhiteTime = () => setWhiteTime(TimerKeys.durationMove);
+  const resetBlackTime = () => setBlackTime(TimerKeys.durationMoves);
+  const resetWhiteTime = () => setWhiteTime(TimerKeys.durationMoves);
 
   const handleTimeUp = (lostColor?: string) => {
     alert(`${lostColor} lost`);

@@ -3,7 +3,7 @@ import { Colors } from "../Colors";
 import { Cell } from "../Cell";
 import blackLogo from "../../../assets/black-rook.png";
 import whiteLogo from "../../../assets/white-rook.png";
-import { FigureNames } from "../../../contants/boardConfig";
+import { FigureNames } from "../../../constants/boardConfig";
 
 export class Rook extends BaseFigure {
   constructor(color: Colors, cell: Cell) {

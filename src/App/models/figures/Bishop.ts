@@ -3,7 +3,7 @@ import { Colors } from "../Colors";
 import { Cell } from "../Cell";
 import blackLogo from "../../../assets/black-bishop.png";
 import whiteLogo from "../../../assets/white-bishop.png";
-import { FigureNames } from "../../../contants/boardConfig";
+import { FigureNames } from "../../../constants/boardConfig";
 
 export class Bishop extends BaseFigure {
   constructor(color: Colors, cell: Cell) {

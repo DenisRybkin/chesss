@@ -1,7 +1,7 @@
 import logo from "../../../../assets/black-king.png";
 import { Colors } from "../../Colors";
 import { Cell } from "../../Cell";
-import { FigureNames } from "../../../../contants/boardConfig";
+import { FigureNames } from "../../../../constants/boardConfig";
 
 export class BaseFigure {
   color: Colors;

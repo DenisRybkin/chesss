@@ -55,5 +55,5 @@ export enum WhiteFiguresPosition {
 }
 
 export enum TimerKeys {
-  durationMove = 300,
+  durationMoves = 300,
 }

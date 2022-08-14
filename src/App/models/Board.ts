@@ -3,7 +3,7 @@ import {
   BlackFiguresPosition,
   BoardConfig,
   WhiteFiguresPosition,
-} from "../../contants/boardConfig";
+} from "../../constants/boardConfig";
 import { Colors } from "./Colors";
 import { Pawn } from "./figures/Pawn";
 import { King } from "./figures/King";
